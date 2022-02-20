@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(68, 125,199 );
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1 id="title">Iniciando estudos DOM</h1>
+    <p class="p2">Aqui vai o resultado</p>
+    <p>Aprenda a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim </div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        
+
+        /*var d = document.getElementById('msg')
+
+        d.innerText = 'estou indo '
+        */
+
+       /* var d = document.querySelector('div#msg')
+
+        d.style.background = "red" 
+        d.style.width = "380px"
+        d.style.padding = "40px" */
+
+        var title = document.getElementById('title')
+
+        //Mudando CSS com Style ----
+        title.style.padding = "40px"
+        title.style.background = "black"
+        title.style.borderRadius = "30px"
+        //Mudando html com innerText ----
+        title.innerText = "DOM é TOP"
+
+
+        corpo.style.background = "green"
+        corpo.style.boxSizing = "0"
+
+        p1.innerText = "JavaScript é bom demais"
+
+        p1.style.background = "red"
+        p1.style.maxWidth = "200px"
+
+        var paragrafo2 = document.querySelector('p.p2')
+
+        paragrafo2.style.background = "blue"
+        paragrafo2.style.maxWidth = "100px"
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
